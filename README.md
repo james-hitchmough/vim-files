@@ -1,5 +1,5 @@
 # vim-files #
 
-Personal repo for random Vim related files.
++ Personal repo for Vim related files (vimrc, ~/.vim).
 
-~/.vimrc symlinked to ~/.vim/vimrc
++ **Note:** ~/.vimrc symlinked to ~/.vim/vimrc
