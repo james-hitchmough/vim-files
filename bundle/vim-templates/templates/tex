@@ -1,0 +1,22 @@
+%	File:		.tex
+%	Last Edit:	dd/mm/yyyy 0000 
+%	Author:		James C Hitchmough
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+\usepackage{graphicx,amsmath,amssymb,xcolor}
+
+\usepackage{geometry}
+  \geometry{a4paper,top=15mm,bottom=20mm}
+
+\title{ }
+\author{ }
+\date{ }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
