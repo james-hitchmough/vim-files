@@ -13,12 +13,13 @@ source /home/james/.vim/custom_abbr.vim
 " shortcut to abbreviations file
 nnoremap <leader>abb :vsplit ~/.vim/custom_abbr.vim<cr>
 
+" automatically cd to location of current file
 set autochdir
 
 " Maps <;> to : for ease of command entry
 nnoremap ; :
 
-" Set the <leader> key
+" Set the <leader> key to the spacebar
 let mapleader = "\<Space>"
 
 " Fixes <j> and <k> key behaviour with 'screen lines'
@@ -30,7 +31,6 @@ nnoremap k gk
 
 " DEFAULT GUI FONT
 set guifont=Anonymous\ Pro\ 12
-"set guifont=Hack\ Regular\ 11
 
 "Mutt email client settings
 au BufRead /tmp/mutt-* set tw=72
@@ -41,7 +41,7 @@ syntax on
 filetype plugin indent on
 set sessionoptions-=options
 
-" Solves markdown formatting issues
+" Solves markdown folding issues
 let g:vim_markdown_folding_disabled=1
 
 "NERDTree plugin shortcut
@@ -113,8 +113,6 @@ nnoremap <leader>d :colorscheme darkslategray
 nnoremap <leader>mi :colorscheme midnight
 
 " Font selections
-nnoremap <leader>fe :set guifont=Envy\ Code\ R\ 12
-nnoremap <leader>fi :set guifont=Inconsolata\ Medium\ 12
 nnoremap <leader>fa :set guifont=Anonymous\ Pro\ 12
 nnoremap <leader>fh :set guifont=Hack\ Regular\ 11
 nnoremap <leader>ff :set guifont=Fantasque\ Sans\ Mono\ Regular\ 12
