@@ -1,4 +1,5 @@
-" Last Edit - 24/10/2015 @ 1808 BST
+" James C Hitchmough
+" Last Edit - 25/10/2015 @ 1219 GMT
 
 set title
 :colorscheme gruvbox
