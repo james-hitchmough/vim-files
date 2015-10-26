@@ -13,6 +13,12 @@ nnoremap <leader>abb :vsplit ~/.vim/custom_abbr.vim<cr>
 " automatically cd to location of current file
 set autochdir
 
+" Strip trailing whitespace on write
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
+autocmd BufWritePre * :call TrimWhiteSpace()
+
 " Maps <;> to : for ease of command entry
 nnoremap ; :
 
@@ -112,6 +118,7 @@ nnoremap <leader>ma :colorscheme material
 nnoremap <leader>g :colorscheme gruvbox
 nnoremap <leader>d :colorscheme darkslategray
 nnoremap <leader>mi :colorscheme midnight
+nnoremap <leader>pc :colorscheme PaperColor
 
 " Font selections
 nnoremap <leader>fa :set guifont=Anonymous\ Pro\ 12
@@ -124,8 +131,8 @@ nnoremap <leader>r <C-w>r
 nnoremap <leader><leader> <C-w><C-w>
 
 " .vimrc editing/sourcing
-nnoremap <leader>ev :vsplit ~/.vimrc<cr> 
-nnoremap <leader>sv :source ~/.vimrc<cr>  
+nnoremap <leader>ev :vsplit ~/.vimrc<cr>
+nnoremap <leader>sv :source ~/.vimrc<cr>
 
 " Disables Arrow Key Navigation (req'd off for mouse scrolling)
 " (normal mode)
