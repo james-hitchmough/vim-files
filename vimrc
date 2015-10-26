@@ -26,6 +26,10 @@ let mapleader = "\<Space>"
 nnoremap j gj
 nnoremap k gk
 
+" vim-airline settings
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+
 "Soft-wrapping settings
 :set nolist wrap linebreak breakat&vim
 
