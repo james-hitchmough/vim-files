@@ -1,6 +1,3 @@
-" James C Hitchmough
-" Last Edit - 25/10/2015 @ 1219 GMT
-
 set title
 :colorscheme gruvbox
 set t_Co=256
