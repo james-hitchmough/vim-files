@@ -4,6 +4,13 @@ set t_Co=256
 set background=dark
 set tw=72
 
+" main indent setting for <tab>
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
 " source abbreviations file
 source /home/james/.vim/custom_abbr.vim
 
