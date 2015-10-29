@@ -29,6 +29,8 @@ let mapleader = "\<Space>"
 nnoremap j gj
 nnoremap k gk
 
+nnoremap <leader>rel :set relativenumber
+
 " vim-airline settings
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
