@@ -9,6 +9,7 @@ abbr diffeq differential equation
 abbr intfac integrating factor
 abbr dydx \frac{dy}{dx}
 abbr d2ydx2 \frac{d^2y}{dx^2}
+abbr auxeq auxilliary equation
 
 " LaTeX syntax
 abbr noin \noindent
