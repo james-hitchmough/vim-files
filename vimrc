@@ -2,7 +2,7 @@ set title
 :colorscheme gruvbox
 set t_Co=256
 set background=dark
-set tw=72
+"set tw=72
 
 " main indent setting for <tab>
 set tabstop=4
