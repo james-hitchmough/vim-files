@@ -9,6 +9,8 @@ abbr diffeq differential equation
 abbr intfac integrating factor
 abbr dydx \frac{dy}{dx}
 abbr d2ydx2 \frac{d^2y}{dx^2}
+abbr dxdt \frac{dx}{dt}
+abbr dydt \frac{dy}{dt}
 abbr auxeq auxilliary equation
 abbr ccoef constant-coefficient
 abbr compfunc complementary function
