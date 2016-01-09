@@ -3,6 +3,7 @@ abbr teh the
 abbr adn and
 abbr waht what
 abbr tehn then
+abbr lenght length
 
 " Mathematics
 abbr diffeq differential equation
@@ -18,6 +19,7 @@ abbr gensol general solution
 abbr partsol particular solution
 abbr partint particular integral
 abbr PoSP Principle of Superposition
+abbr matmod mathematical modelling
 
 " LaTeX syntax
 
