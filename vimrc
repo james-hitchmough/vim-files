@@ -99,13 +99,11 @@ nmap <F3> :!evince *.pdf && disown &<cr><cr>
 " QUICK BUILD FOR PANDOC .md > .pdf
 nmap <F4> :!pandoc -V papersize:"a4paper" *.md -o *.pdf<cr><cr>
 nmap <F5> :!zathura *.pdf && disown &<cr><cr>
+nmap <F6> :!pandoc -V papersize:"a4paper" --latex-engine=pdflatex *.md -o *.pdf<cr><cr>
 
 " QUICK BUILD FOR PANDOC .md > .html (with LaTeX)
-nmap <F6> :!pandoc *.md -s --mathml -o *.html<cr><cr>
-nmap <F7> :!firefox *.html && disown &<cr><cr>
-
-"QUICK BUILD FOR PANDOC .md > .epub
-nmap <F8> :!pandoc *.md -s --mathml -o *.epub<cr><cr>
+nmap <F7> :!pandoc *.md -s --mathml -o *.html<cr><cr>
+nmap <F8> :!firefox *.html && disown &<cr><cr>
 
 " QUICK BUILD FOR PANDOC .md > .pdf (for mobile)
 nmap <F9> :!pandoc -V papersize:"a6paper" *.md -o mobile.pdf --template ~/Dropbox/NOTEBOOK/Other/mobtemp.latex<cr><cr>
