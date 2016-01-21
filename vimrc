@@ -157,4 +157,8 @@ inoremap <right> <nop>
 nnoremap <up> gk
 nnoremap <down> gj
 
+" Autosaves folds on exit and autoloads folds on start
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
 " EOF
