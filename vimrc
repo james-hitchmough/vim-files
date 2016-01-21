@@ -32,6 +32,9 @@ nnoremap ; :
 " Set the <leader> key to the spacebar
 let mapleader = "\<Space>"
 
+" Shortcut for 'toggle fold'
+nnoremap <leader><leader> za
+
 " Fixes <j> and <k> key behaviour with 'screen lines'
 nnoremap j gj
 nnoremap k gk
@@ -128,14 +131,14 @@ nnoremap <leader>mi :colorscheme midnight
 nnoremap <leader>pc :colorscheme PaperColor
 
 " Font selections
-nnoremap <leader>fa :set guifont=Anonymous\ Pro\ 12
-nnoremap <leader>fh :set guifont=Hack\ Regular\ 11
-nnoremap <leader>ff :set guifont=Fantasque\ Sans\ Mono\ Regular\ 12
+nnoremap <leader>gfa :set guifont=Anonymous\ Pro\ 12
+nnoremap <leader>gfh :set guifont=Hack\ Regular\ 11
+nnoremap <leader>gff :set guifont=Fantasque\ Sans\ Mono\ Regular\ 12
 
 " Window splits
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>r <C-w>r
-nnoremap <leader><leader> <C-w><C-w>
+nnoremap <leader>/ <C-w><C-w>
 
 " .vimrc editing/sourcing
 nnoremap <leader>ev :vsplit ~/.vimrc<cr>
