@@ -33,7 +33,7 @@ nnoremap ; :
 let mapleader = "\<Space>"
 
 " Shortcut for 'toggle fold'
-nnoremap <leader><leader> za
+nnoremap <leader><leader> zA
 
 " Fixes <j> and <k> key behaviour with 'screen lines'
 nnoremap j gj
