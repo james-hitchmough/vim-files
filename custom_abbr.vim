@@ -22,6 +22,8 @@ abbr PoSP Principle of Superposition
 abbr matmod mathematical modelling
 
 " LaTeX syntax
+abbr mbf mathbf{
+abbr tbf textbf{
 
 " Physics
 abbr eqom equations of motion
