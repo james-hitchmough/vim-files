@@ -138,7 +138,7 @@ nnoremap <leader>gff :set guifont=Fantasque\ Sans\ Mono\ Regular\ 12
 " Window splits
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>r <C-w>r
-nnoremap <leader>/ <C-w><C-w>
+nnoremap <leader>j <C-w><C-w>
 
 " .vimrc editing/sourcing
 nnoremap <leader>ev :vsplit ~/.vimrc<cr>
