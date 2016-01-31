@@ -129,6 +129,7 @@ nnoremap <leader>g :colorscheme gruvbox
 nnoremap <leader>d :colorscheme darkslategray
 nnoremap <leader>mi :colorscheme midnight
 nnoremap <leader>pc :colorscheme PaperColor
+nnoremap <leader>a :colorscheme alduin
 
 " Font selections
 nnoremap <leader>gfa :set guifont=Anonymous\ Pro\ 12
