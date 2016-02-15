@@ -100,7 +100,8 @@ nmap <F2> :!pdflatex *.tex<cr><cr>
 nmap <F3> :!evince *.pdf && disown &<cr><cr>
 
 " QUICK BUILD FOR PANDOC .md > .pdf
-nmap <F4> :!pandoc -V papersize:"a4paper" *.md -o *.pdf<cr><cr>
+"nmap <F4> :!pandoc -V papersize:"a4paper" *.md -o *.pdf<cr><cr>
+nmap <F4> :!mkpdf<cr><cr>
 nmap <F5> :!zathura *.pdf && disown &<cr><cr>
 nmap <F6> :!pandoc -V papersize:"a4paper" --latex-engine=pdflatex *.md -o *.pdf<cr><cr>
 
@@ -139,7 +140,7 @@ nnoremap <leader>gff :set guifont=Fantasque\ Sans\ Mono\ Regular\ 12
 " Window splits
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>r <C-w>r
-nnoremap <leader>j <C-w><C-w>
+nnoremap <leader>, <C-w><C-w>
 
 " .vimrc editing/sourcing
 nnoremap <leader>ev :vsplit ~/.vimrc<cr>
