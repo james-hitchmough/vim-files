@@ -116,6 +116,12 @@ nmap <F9> :!pandoc -V papersize:"a6paper" *.md -o mobile.pdf --template ~/Dropbo
 "Shortcut for markdown strikethrough
 let @s = '(wi~~$a~~'
 
+"Macro for LaTeX '\begin{equation}...'
+let @e = 'i\begin{equation}\end{equation}jj€kui	jj'
+
+"Macro for LaTeX '\begin{align*}...'
+let @a = 'i\begin{align*}\end{align*}jjki	jj'
+
 " Copy, Paste and System Paste
 map <Leader>ps "+gP
 map <Leader>p "+p
