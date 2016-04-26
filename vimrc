@@ -35,8 +35,14 @@ nnoremap ; :
 " Set the <leader> key to the spacebar
 let mapleader = "\<Space>"
 
-" Shortcut for 'toggle fold'
+" Mappings for folding
 nnoremap <leader><leader> zA
+nnoremap <leader>z za
+
+" Mappings for Tabs
+nnoremap <C-N> <Esc>:tabn<CR>
+nnoremap <C-P> <Esc>:tabp<CR>
+nnoremap <C-O> <Esc>:tabnew<CR>
 
 " Fixes <j> and <k> key behaviour with 'screen lines'
 nnoremap j gj
@@ -131,13 +137,13 @@ map <Leader>p "+p
 map <Leader>y "+y
 
 " Colorscheme selections
-nnoremap <leader>m :colorscheme molokai
-nnoremap <leader>de :colorscheme desert
-nnoremap <leader>sol :colorscheme solarized
-nnoremap <leader>ma :colorscheme material
-nnoremap <leader>g :colorscheme gruvbox
-nnoremap <leader>d :colorscheme darkslategray
-nnoremap <leader>pc :colorscheme PaperColor
+nnoremap <leader>cm :colorscheme molokai
+nnoremap <leader>cde :colorscheme desert
+nnoremap <leader>csol :colorscheme solarized
+nnoremap <leader>cma :colorscheme material
+nnoremap <leader>cg :colorscheme gruvbox
+nnoremap <leader>cd :colorscheme darkslategray
+nnoremap <leader>cpc :colorscheme PaperColor
 
 " Font selections
 nnoremap <leader>gfa :set guifont=Anonymous\ Pro\ 12
@@ -150,11 +156,11 @@ nnoremap <leader>r <C-w>r
 nnoremap <leader>, <C-w><C-w>
 
 " Scratchpad for random notes
-nnoremap <leader>s :vsplit ~/Dropbox/SCRATCHPAD.md<cr>
+nnoremap <leader>s :tabnew :e ~/Dropbox/SCRATCHPAD.md<cr>
 
 " .vimrc editing/sourcing
-nnoremap <leader>ev :vsplit ~/.vimrc<cr>
-nnoremap <leader>sv :source ~/.vimrc<cr>
+nnoremap <leader>ve :vsplit ~/.vimrc<cr>
+nnoremap <leader>vs :source ~/.vimrc<cr>
 
 " Disables Arrow Key Navigation (req'd off for mouse scrolling)
 " (normal mode)

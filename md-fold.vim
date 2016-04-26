@@ -2,23 +2,20 @@
 " Source: http://stackoverflow.com/questions/3828606/vim-markdown-folding
 " ***********************************************************************
 function! MarkdownLevel()
-"    if getline(v:lnum) =~ '^# .*$'
-"        return ">1"
-"    endif
     if getline(v:lnum) =~ '^## .*$'
-        return ">2"
+        return ">1"
     endif
     if getline(v:lnum) =~ '^### .*$'
-        return ">3"
+        return ">2"
     endif
     if getline(v:lnum) =~ '^#### .*$'
-        return ">4"
+        return ">3"
     endif
     if getline(v:lnum) =~ '^##### .*$'
-        return ">5"
+        return ">4"
     endif
     if getline(v:lnum) =~ '^###### .*$'
-        return ">6"
+        return ">5"
     endif
     return "="
 endfunction
