@@ -14,6 +14,9 @@ set expandtab
 " source abbreviations file
 source /home/james/.vim/custom_abbr.vim
 
+" source markdown folding script
+source /home/james/.vim/md-fold.vim
+
 " shortcut to abbreviations file
 nnoremap <leader>abb :vsplit ~/.vim/custom_abbr.vim<cr>
 
@@ -134,9 +137,7 @@ nnoremap <leader>sol :colorscheme solarized
 nnoremap <leader>ma :colorscheme material
 nnoremap <leader>g :colorscheme gruvbox
 nnoremap <leader>d :colorscheme darkslategray
-nnoremap <leader>mi :colorscheme midnight
 nnoremap <leader>pc :colorscheme PaperColor
-nnoremap <leader>a :colorscheme alduin
 
 " Font selections
 nnoremap <leader>gfa :set guifont=Anonymous\ Pro\ 12
@@ -147,6 +148,9 @@ nnoremap <leader>gff :set guifont=Fantasque\ Sans\ Mono\ Regular\ 12
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>r <C-w>r
 nnoremap <leader>, <C-w><C-w>
+
+" Scratchpad for random notes
+nnoremap <leader>s :vsplit ~/Dropbox/SCRATCHPAD.md<cr>
 
 " .vimrc editing/sourcing
 nnoremap <leader>ev :vsplit ~/.vimrc<cr>
