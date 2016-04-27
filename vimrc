@@ -111,18 +111,18 @@ map <leader>gui :call ToggleGUI()<cr>
 set guioptions=i
 
 " QUICK BUILD FOR LATEX
-nmap <F2> :!pdflatex *.tex<cr><cr>
-nmap <F3> :!zathura *.pdf && disown &<cr><cr>
+nmap <F2> :!pdflatex %:r.tex<cr><cr>
+nmap <F3> :!zathura %:r.pdf && disown &<cr><cr>
 
 " QUICK BUILD FOR PANDOC .md > .pdf
 nmap <F4> :!mkpdf<cr><cr>
 
 " QUICK BUILD FOR PANDOC .md > .html (with LaTeX)
 nmap <F6> :!pandoc *.md -s --mathml -o *.html<cr><cr>
-nmap <F7> :!firefox *.html && disown &<cr><cr>
+nmap <F7> :!firefox %:r.html && disown &<cr><cr>
 
 " Alternative PDF viewer
-nmap <F8> :!evince *.pdf && disown &<cr><cr>
+nmap <F8> :!evince %:r.pdf && disown &<cr><cr>
 
 " System Copy and Paste
 map <Leader>p "+gp
