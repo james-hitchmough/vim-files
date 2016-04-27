@@ -4,18 +4,21 @@ set t_Co=256
 set background=dark
 "set tw=72
 
+" source abbreviations file
+source ~/.vim/custom_abbr.vim
+
+" source markdown folding script
+source ~/.vim/md-fold.vim
+
+" source macros file
+source ~/.vim/macros.vim
+
 " main indent setting for <tab>
 set tabstop=4
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
-
-" source abbreviations file
-source /home/james/.vim/custom_abbr.vim
-
-" source markdown folding script
-source /home/james/.vim/md-fold.vim
 
 " shortcut to abbreviations file
 nnoremap <leader>abb :vsplit ~/.vim/custom_abbr.vim<cr>
@@ -137,13 +140,13 @@ map <Leader>p "+p
 map <Leader>y "+y
 
 " Colorscheme selections
-nnoremap <leader>cm :colorscheme molokai
-nnoremap <leader>cde :colorscheme desert
-nnoremap <leader>csol :colorscheme solarized
-nnoremap <leader>cma :colorscheme material
-nnoremap <leader>cg :colorscheme gruvbox
-nnoremap <leader>cd :colorscheme darkslategray
-nnoremap <leader>cpc :colorscheme PaperColor
+nnoremap <leader>m :colorscheme molokai
+nnoremap <leader>de :colorscheme desert
+nnoremap <leader>sol :colorscheme solarized
+nnoremap <leader>ma :colorscheme material
+nnoremap <leader>g :colorscheme gruvbox
+nnoremap <leader>d :colorscheme darkslategray
+nnoremap <leader>pc :colorscheme PaperColor
 
 " Font selections
 nnoremap <leader>gfa :set guifont=Anonymous\ Pro\ 12
