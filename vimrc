@@ -4,6 +4,7 @@ set t_Co=256
 set background=dark
 "set tw=72
 
+
 " source abbreviations file
 source ~/.vim/custom_abbr.vim
 
@@ -12,6 +13,8 @@ source ~/.vim/md-fold.vim
 
 " source macros file
 source ~/.vim/macros.vim
+
+
 
 " main indent setting for <tab>
 set tabstop=4
@@ -72,7 +75,7 @@ syntax on
 filetype plugin indent on
 set sessionoptions-=options
 
-" Solves markdown folding issues
+" Disables auto markdown folding (custom script used)
 let g:vim_markdown_folding_disabled=1
 
 "NERDTree plugin shortcut
@@ -85,7 +88,7 @@ inoremap jj <ESC>
 :nnoremap <C-h> :nohlsearch<cr>
 
 set number
-"set relativenumber
+set relativenumber
 set undofile
 set showcmd
 set ttyfast
@@ -109,34 +112,20 @@ set guioptions=i
 
 " QUICK BUILD FOR LATEX
 nmap <F2> :!pdflatex *.tex<cr><cr>
-nmap <F3> :!evince *.pdf && disown &<cr><cr>
+nmap <F3> :!zathura *.pdf && disown &<cr><cr>
 
 " QUICK BUILD FOR PANDOC .md > .pdf
-"nmap <F4> :!pandoc -V papersize:"a4paper" *.md -o *.pdf<cr><cr>
 nmap <F4> :!mkpdf<cr><cr>
-nmap <F5> :!zathura *.pdf && disown &<cr><cr>
-nmap <F6> :!pandoc -V papersize:"a4paper" --latex-engine=pdflatex *.md -o *.pdf<cr><cr>
 
 " QUICK BUILD FOR PANDOC .md > .html (with LaTeX)
-nmap <F7> :!pandoc *.md -s --mathml -o *.html<cr><cr>
-nmap <F8> :!firefox *.html && disown &<cr><cr>
+nmap <F6> :!pandoc *.md -s --mathml -o *.html<cr><cr>
+nmap <F7> :!firefox *.html && disown &<cr><cr>
 
-" QUICK BUILD FOR PANDOC .md > .pdf (for mobile)
-nmap <F9> :!pandoc -V papersize:"a6paper" *.md -o mobile.pdf --template ~/Dropbox/NOTEBOOK/Other/mobtemp.latex<cr><cr>
+" Alternative PDF viewer
+nmap <F8> :!evince *.pdf && disown &<cr><cr>
 
-
-"Shortcut for markdown strikethrough
-let @s = '(wi~~$a~~'
-
-"Macro for LaTeX '\begin{equation}...'
-let @e = 'i\begin{equation}\end{equation}jj€kui	jj'
-
-"Macro for LaTeX '\begin{align*}...'
-let @a = 'i\begin{align*}\end{align*}jjki	jj'
-
-" Copy, Paste and System Paste
-map <Leader>ps "+gP
-map <Leader>p "+p
+" System Copy and Paste
+map <Leader>p "+gp
 map <Leader>y "+y
 
 " Colorscheme selections
@@ -145,7 +134,6 @@ nnoremap <leader>de :colorscheme desert
 nnoremap <leader>sol :colorscheme solarized
 nnoremap <leader>ma :colorscheme material
 nnoremap <leader>g :colorscheme gruvbox
-nnoremap <leader>d :colorscheme darkslategray
 nnoremap <leader>pc :colorscheme PaperColor
 
 " Font selections
@@ -159,7 +147,7 @@ nnoremap <leader>r <C-w>r
 nnoremap <leader>, <C-w><C-w>
 
 " Scratchpad for random notes
-nnoremap <leader>s :tabnew :e ~/Dropbox/SCRATCHPAD.md<cr>
+nnoremap <leader>s :vsplit ~/Dropbox/SCRATCHPAD.md<cr>
 
 " .vimrc editing/sourcing
 nnoremap <leader>ve :vsplit ~/.vimrc<cr>
@@ -184,5 +172,3 @@ nnoremap <down> gj
 " Autosaves folds on exit and autoloads folds on start
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
-
-" EOF
