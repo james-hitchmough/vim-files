@@ -2,19 +2,20 @@ set title
 :colorscheme gruvbox
 set t_Co=256
 set background=dark
-"set tw=72
+set mouse=a
+set scrolloff=2
 
+"Soft-wrapping settings
+:set nolist wrap linebreak breakat&vim
 
-" source abbreviations file
+" abbreviations file
 source ~/.vim/custom_abbr.vim
 
-" source markdown folding script
+" markdown folding script
 source ~/.vim/md-fold.vim
 
-" source macros file
+" macros file
 source ~/.vim/macros.vim
-
-
 
 " main indent setting for <tab>
 set tabstop=4
@@ -27,7 +28,8 @@ set expandtab
 nnoremap <leader>abb :vsplit ~/.vim/custom_abbr.vim<cr>
 
 " automatically cd to location of current file
-set autochdir
+"set autochdir
+autocmd BufEnter * silent! lcd %:p:h
 
 " Strip trailing whitespace on write
 function! TrimWhiteSpace()
@@ -60,9 +62,6 @@ nnoremap <leader>rel :set relativenumber
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 
-"Soft-wrapping settings
-:set nolist wrap linebreak breakat&vim
-
 " DEFAULT GUI FONT
 set guifont=Anonymous\ Pro\ 12
 
@@ -78,9 +77,6 @@ set sessionoptions-=options
 " Disables auto markdown folding (custom script used)
 let g:vim_markdown_folding_disabled=1
 
-"NERDTree plugin shortcut
-nnoremap <leader>nt :NERDTree
-
 " Map <j><j> to <ESC> for switching to 'normal' mode
 inoremap jj <ESC>
 
@@ -94,7 +90,6 @@ set showcmd
 set ttyfast
 set incsearch
 set showmatch
-set hlsearch
 
 ""  GUI OPTIONS TOGGLING
 function! ToggleGUI()
@@ -110,16 +105,16 @@ map <leader>gui :call ToggleGUI()<cr>
 " by default, hide gui menus
 set guioptions=i
 
-" QUICK BUILD FOR LATEX
+" COMPILING FOR LATEX
 nmap <F2> :!pdflatex %:r.tex<cr><cr>
-nmap <F3> :!zathura %:r.pdf && disown &<cr><cr>
+nmap <F5> :!zathura %:r.pdf &<cr><cr>
 
-" QUICK BUILD FOR PANDOC .md > .pdf
-nmap <F4> :!mkpdf<cr><cr>
+" COMPILING FOR PANDOC .md > .pdf
+nmap <F3> :!mkpdf<cr><cr>
 
-" QUICK BUILD FOR PANDOC .md > .html (with LaTeX)
-nmap <F6> :!pandoc *.md -s --mathml -o *.html<cr><cr>
-nmap <F7> :!firefox %:r.html && disown &<cr><cr>
+" COMPILING FOR PANDOC .md > .html (with LaTeX)
+nmap <F4> :!pandoc -s -S -c ~/Dropbox/Markdown-Resources/markdown-css-themes/markdown5.css --mathjax % -o %:r.html<cr><cr>
+nmap <F6> :!ice-firefox %:r.html && disown &<cr><cr>
 
 " Alternative PDF viewer
 nmap <F8> :!evince %:r.pdf && disown &<cr><cr>
