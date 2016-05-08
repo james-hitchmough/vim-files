@@ -107,17 +107,17 @@ set guioptions=i
 
 " COMPILING FOR LATEX
 nmap <F2> :!pdflatex %:r.tex<cr><cr>
-nmap <F5> :!zathura %:r.pdf &<cr><cr>
+nmap <F5> :!ds zathura %:r.pdf<cr><cr>
 
 " COMPILING FOR PANDOC .md > .pdf
 nmap <F3> :!mkpdf<cr><cr>
 
 " COMPILING FOR PANDOC .md > .html (with LaTeX)
 nmap <F4> :!pandoc -s -S -c ~/Dropbox/Markdown-Resources/markdown-css-themes/markdown5.css --mathjax % -o %:r.html<cr><cr>
-nmap <F6> :!ice-firefox %:r.html && disown &<cr><cr>
+nmap <F6> :!ds ice-firefox %:r.html<cr><cr>
 
 " Alternative PDF viewer
-nmap <F8> :!evince %:r.pdf && disown &<cr><cr>
+nmap <F8> :!ds evince %:r.pdf<cr><cr>
 
 " System Copy and Paste
 map <Leader>p "+gp
