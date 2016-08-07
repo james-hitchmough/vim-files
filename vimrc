@@ -107,17 +107,18 @@ set guioptions=i
 
 " COMPILING FOR LATEX
 nmap <F2> :!pdflatex %:r.tex<cr><cr>
-nmap <F5> :!ds zathura %:r.pdf<cr><cr>
+nmap <F5> :!sh /home/james/Dropbox/Scripts/ds zathura %:r.pdf<cr><cr>
 
 " COMPILING FOR PANDOC .md > .pdf
-nmap <F3> :!mkpdf<cr><cr>
+nmap <F3> :!sh /home/james/Dropbox/Scripts/mkpdf<cr><cr>
 
 " COMPILING FOR PANDOC .md > .html (with LaTeX)
-nmap <F4> :!pandoc -s -S -c ~/Dropbox/Markdown-Resources/markdown-css-themes/markdown5.css --mathjax % -o %:r.html<cr><cr>
-nmap <F6> :!ds ice-firefox %:r.html<cr><cr>
+nmap <F4> :!sh /home/james/Dropbox/Scripts/mkhtml<cr><cr>
+"nmap <F4> :!pandoc -s -S -c ~/Dropbox/Markdown-Resources/markdown-css-themes/markdown5.css --mathjax % -o %:r.html<cr><cr>
+nmap <F6> :!sh /home/james/Dropbox/Scripts/ds ice-firefox %:r.html<cr><cr>
 
 " Alternative PDF viewer
-nmap <F8> :!ds evince %:r.pdf<cr><cr>
+nmap <F8> :!sh /home/james/Dropbox/Scripts/ds evince %:r.pdf<cr><cr>
 
 " System Copy and Paste
 map <Leader>p "+gp
