@@ -5,6 +5,9 @@ set background=dark
 set mouse=a
 set scrolloff=2
 
+" automatically cd to location of current file
+set autochdir
+
 "Soft-wrapping settings
 :set nolist wrap linebreak breakat&vim
 
@@ -27,9 +30,7 @@ set expandtab
 " shortcut to abbreviations file
 nnoremap <leader>abb :vsplit ~/.vim/custom_abbr.vim<cr>
 
-" automatically cd to location of current file
-"set autochdir
-autocmd BufEnter * silent! lcd %:p:h
+"autocmd BufEnter * silent! lcd %:p:h
 
 " Strip trailing whitespace on write
 function! TrimWhiteSpace()
