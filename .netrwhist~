@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/james/Dropbox/Archive/MST210/TMAs/Answer-Scripts/TMA07'
+let g:netrw_dirhist_2='/home/james/Dropbox/HAS/Winter-Rota/Archive'
