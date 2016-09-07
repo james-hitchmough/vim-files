@@ -18,8 +18,7 @@ source ~/.vim/md-fold.vim
 source ~/.vim/macros.vim
 
 " automatically cd to location of current file
-:autocmd BufRead,BufNewFile * lcd %:p:h
-:autocmd BufEnter           * lcd %:p:h
+:autocmd BufRead,BufNewFile,BufWritePost,BufEnter * lcd %:p:h
 
 " main indent setting for <tab>
 set tabstop=4
