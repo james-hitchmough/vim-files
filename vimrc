@@ -6,7 +6,9 @@ set mouse=a
 set scrolloff=2
 
 " automatically cd to location of current file
-set autochdir
+"set autochdir
+:autocmd BufRead,BufNewFile * lcd %:p:h
+:autocmd BufEnter           * lcd %:p:h
 
 "Soft-wrapping settings
 :set nolist wrap linebreak breakat&vim
