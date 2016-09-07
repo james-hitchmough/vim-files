@@ -5,11 +5,6 @@ set background=dark
 set mouse=a
 set scrolloff=2
 
-" automatically cd to location of current file
-"set autochdir
-:autocmd BufRead,BufNewFile * lcd %:p:h
-:autocmd BufEnter           * lcd %:p:h
-
 "Soft-wrapping settings
 :set nolist wrap linebreak breakat&vim
 
@@ -22,6 +17,10 @@ source ~/.vim/md-fold.vim
 " macros file
 source ~/.vim/macros.vim
 
+" automatically cd to location of current file
+:autocmd BufRead,BufNewFile * lcd %:p:h
+:autocmd BufEnter           * lcd %:p:h
+
 " main indent setting for <tab>
 set tabstop=4
 " when indenting with '>', use 4 spaces width
@@ -31,8 +30,6 @@ set expandtab
 
 " shortcut to abbreviations file
 nnoremap <leader>abb :vsplit ~/.vim/custom_abbr.vim<cr>
-
-"autocmd BufEnter * silent! lcd %:p:h
 
 " Strip trailing whitespace on write
 function! TrimWhiteSpace()
