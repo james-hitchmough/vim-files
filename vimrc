@@ -43,8 +43,8 @@ nnoremap ; :
 let mapleader = "\<Space>"
 
 " Mappings for folding
-nnoremap <leader><leader> zA
-nnoremap <leader>z za
+nnoremap <leader><leader> za
+nnoremap <leader>z zA
 
 " Mappings for Tabs
 nnoremap <C-N> <Esc>:tabn<CR>
