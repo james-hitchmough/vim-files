@@ -77,6 +77,9 @@ set sessionoptions-=options
 " Disables auto markdown folding (custom script used)
 let g:vim_markdown_folding_disabled=1
 
+" Markdown LaTeX syntax highlighting
+"let g:vim_markdown_math = 1
+
 " Map <j><j> to <ESC> for switching to 'normal' mode
 inoremap jj <ESC>
 
