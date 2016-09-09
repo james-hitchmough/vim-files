@@ -4,16 +4,15 @@ set t_Co=256
 set background=dark
 set mouse=a
 set scrolloff=2
+set nocursorline
 
 "Soft-wrapping settings
 :set nolist wrap linebreak breakat&vim
 
 " abbreviations file
 source ~/.vim/custom_abbr.vim
-
 " markdown folding script
 source ~/.vim/md-fold.vim
-
 " macros file
 source ~/.vim/macros.vim
 
@@ -59,7 +58,7 @@ nnoremap <leader>rel :set relativenumber
 
 " vim-airline settings
 set laststatus=2
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='dark'
 
 " DEFAULT GUI FONT
