@@ -77,13 +77,14 @@ set sessionoptions-=options
 let g:vim_markdown_folding_disabled=1
 
 " Markdown LaTeX syntax highlighting
+nnoremap <leader>ml :let g:vim_markdown_math = 1
 "let g:vim_markdown_math = 1
 
 " Map <j><j> to <ESC> for switching to 'normal' mode
 inoremap jj <ESC>
 
 "Clear the search buffer when hitting Ctrl-h
-:nnoremap <C-h> :nohlsearch<cr>
+nnoremap <C-h> :nohlsearch<cr>
 
 set number
 set relativenumber
@@ -116,7 +117,6 @@ nmap <F3> :!sh /home/james/Dropbox/Scripts/mkpdf<cr><cr>
 
 " COMPILING FOR PANDOC .md > .html (with LaTeX)
 nmap <F4> :!sh /home/james/Dropbox/Scripts/mkhtml<cr><cr>
-"nmap <F4> :!pandoc -s -S -c ~/Dropbox/Markdown-Resources/markdown-css-themes/markdown5.css --mathjax % -o %:r.html<cr><cr>
 nmap <F6> :!sh /home/james/Dropbox/Scripts/ds ice-firefox %:r.html<cr><cr>
 
 " Alternative PDF viewer
@@ -145,10 +145,10 @@ nnoremap <leader>r <C-w>r
 nnoremap <leader>, <C-w><C-w>
 
 " Scratchpad for random notes
-nnoremap <leader>s :vsplit ~/Dropbox/SCRATCHPAD.md<cr>
+nnoremap <leader>s :tabnew ~/Dropbox/SCRATCHPAD.md<cr>
 
 " .vimrc editing/sourcing
-nnoremap <leader>ve :vsplit ~/.vimrc<cr>
+nnoremap <leader>ve :tabnew ~/.vimrc<cr>
 nnoremap <leader>vs :source ~/.vimrc<cr>
 
 " Disables Arrow Key Navigation (req'd off for mouse scrolling)
