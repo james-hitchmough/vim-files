@@ -129,7 +129,7 @@ map <Leader>y "+y
 " Colorscheme selections
 nnoremap <leader>m :colorscheme molokai
 nnoremap <leader>de :colorscheme desert
-nnoremap <leader>sol :colorscheme solarized
+nnoremap <leader>sol :set t_Co=16 <bar> :colorscheme solarized<cr>
 nnoremap <leader>ma :colorscheme material
 nnoremap <leader>g :colorscheme gruvbox
 nnoremap <leader>pc :colorscheme PaperColor
