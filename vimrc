@@ -35,6 +35,13 @@ function! TrimWhiteSpace()
 endfunction
 autocmd BufWritePre * :call TrimWhiteSpace()
 
+" i3wm config file detection
+augroup i3_ftdetect
+  au!
+  au BufRead,BufNewFile *i3/config set ft=i3
+augroup END
+
+
 " Maps <;> to : for ease of command entry
 nnoremap ; :
 
