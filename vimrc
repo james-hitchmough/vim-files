@@ -77,8 +77,8 @@ set sessionoptions-=options
 let g:vim_markdown_folding_disabled=1
 
 " Markdown LaTeX syntax highlighting
-nnoremap <leader>ml :let g:vim_markdown_math = 1
-"let g:vim_markdown_math = 1
+let g:vim_markdown_math = 1
+nnoremap <leader>ml :let g:vim_markdown_math = 0
 
 " Map <j><j> to <ESC> for switching to 'normal' mode
 inoremap jj <ESC>
