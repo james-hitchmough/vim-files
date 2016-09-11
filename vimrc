@@ -38,7 +38,7 @@ autocmd BufWritePre * :call TrimWhiteSpace()
 " i3wm config file detection
 augroup i3_ftdetect
   au!
-  au BufRead,BufNewFile *i3/config set ft=i3
+  au BufRead,BufNewFile ~/.config/i3/config set ft=i3
 augroup END
 
 
