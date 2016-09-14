@@ -69,7 +69,7 @@ set laststatus=2
 "let g:airline_theme='dark'
 
 " DEFAULT GUI FONT
-set guifont=Anonymous\ Pro\ 12
+set guifont=Anonymous\ Pro\ 11
 
 "Mutt email client settings
 au BufRead /tmp/mutt-* set tw=72
