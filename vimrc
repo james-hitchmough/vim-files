@@ -69,10 +69,11 @@ set laststatus=2
 "let g:airline_theme='dark'
 
 " DEFAULT GUI FONT
-set guifont=Inconsolata\ Medium\ 11
+set guifont=Roboto\ Mono\ for\ Powerline\ Medium\ 11
 
 "Mutt email client settings
-au BufRead /tmp/mutt-* set tw=72
+"au BufRead /tmp/mutt-* set tw=72
+au BufRead /tmp/mutt-* set nolist wrap linebreak breakat&vim
 
 " pathogen plugin manager config
 execute pathogen#infect()
