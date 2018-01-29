@@ -2,9 +2,6 @@
 " Source: http://stackoverflow.com/questions/3828606/vim-markdown-folding
 " ***********************************************************************
 function! MarkdownLevel()
-    if getline(v:lnum)=~ '---'
-        return ">1"
-    endif
     if getline(v:lnum) =~ '^# .*$'
         return ">1"
     endif
