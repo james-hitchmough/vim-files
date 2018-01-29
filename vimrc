@@ -125,7 +125,7 @@ nmap <F3> :!sh /home/james/Dropbox/Scripts/mkpdf<cr><cr>
 
 " COMPILING FOR PANDOC .md > .html (with LaTeX)
 nmap <F4> :!sh /home/james/Dropbox/Scripts/mkhtml<cr><cr>
-nmap <F6> :!sh /home/james/Dropbox/Scripts/ds qutebrowser %:r.html<cr><cr>
+nmap <F6> :!sh /home/james/Dropbox/Scripts/ds qutebrowser --target window %:r.html<cr><cr>
 
 " Alternative PDF viewer
 nmap <F8> :!sh /home/james/Dropbox/Scripts/ds evince %:r.pdf<cr><cr>
