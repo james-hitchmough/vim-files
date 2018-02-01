@@ -178,3 +178,9 @@ nnoremap <down> gj
 " Autosaves folds on exit and autoloads folds on start
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
+
+"" Backup, Swap and Undo
+set undofile
+set directory=~/.vim/swap,/tmp
+set backupdir=~/.vim/backup,/tmp
+set undodir=~/.vim/undo,/tmp

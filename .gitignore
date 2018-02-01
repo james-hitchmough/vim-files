@@ -2,5 +2,8 @@
 *.log
 *.bak
 view/
+undo/
+backup/
+swap/
 .netrwhist
 .netrwhist~
