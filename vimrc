@@ -8,7 +8,15 @@ set background=dark
 set mouse=a
 set scrolloff=2
 set nocursorline
-:colorscheme gruvbox
+
+colorscheme gruvbox
+
+function! Transparency()
+    if $t == 1
+        colorscheme desert
+    endif
+endfunction
+call Transparency()
 
 "Soft-wrapping settings
 :set nolist wrap linebreak breakat&vim
