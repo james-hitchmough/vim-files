@@ -5,6 +5,7 @@ abbr waht what
 abbr tehn then
 abbr lenght length
 abbr galazy galaxy
+abbr Galazy Galaxy
 
 " Mathematics
 abbr diffeq differential equation
